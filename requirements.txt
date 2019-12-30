@@ -4,6 +4,8 @@
 #
 #    pip-compile --no-index --output-file=requirements.txt requirements.in
 #
+
+### platform dependency #######
 aiofiles==0.4.0           # via sanic
 alabaster==0.7.12         # via sphinx
 auto-sklearn==0.5.0
@@ -48,7 +50,7 @@ pyyaml==5.1               # via auto-sklearn
 requests==2.21.0          # via sphinx
 sanic-openapi==0.5.0
 sanic==18.12.0
-scikit-learn==0.19.2      # via auto-sklearn, smac
+scikit-learn==0.21.3    # via auto-sklearn, smac
 scipy==1.2.1              # via auto-sklearn, smac, xgboost
 setuptools-git==1.2       # via fbprophet
 six==1.12.0               # via cycler, holidays, packaging, python-dateutil, smac
@@ -69,6 +71,14 @@ urllib3==1.24.1           # via requests
 uvloop==0.12.2            # via sanic
 websockets==6.0           # via sanic
 xgboost==0.82             # via auto-sklearn
+bcrypt==3.1.7             # encryption the password
+redis==3.3.8              # cache session data
+umongo==2.1.0             # persist like ORM data
+pymongo==3.9.0            # persist likely json data
+sanic_cors==0.9.9.post3   # support for CORS
+
+
+#### NLP function dependency ####
 wordcloud==1.5.0          # via wordcloud
 nltk==3.4.5               # via word segmentation
 xlrd==1.2.0               # via excel
