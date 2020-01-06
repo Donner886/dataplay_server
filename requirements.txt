@@ -85,6 +85,6 @@ xlrd==1.2.0               # via excel
 regex==2018.6.6           # via regular expression
 jieba==0.39               # via chinese segmentation
 pyrsistent==0.14.2
-
+IPython==7.11.1
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools==41.0.1        # via auto-sklearn, kiwisolver, pynisher, smac, sphinx
